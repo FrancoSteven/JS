@@ -8,7 +8,7 @@ Facilidad de Desarrollo Web: Es fundamental en el desarrollo web, proporcionando
 
 En JavaScript existen dos tipos de datos: 
 
-- [**Objetos](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_objects):** En ****[JavaScript](https://developer.mozilla.org/es/docs/Glossary/JavaScript) sigue un paradigma simple basado en objetos, donde un objeto es una colección de propiedades, y cada propiedad se asocia con una clave y un valor. Estas propiedades pueden contener funciones, que se denominan métodos cuando están asociadas a objetos.
+- [**Objetos**](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_objects):** En [JavaScript](https://developer.mozilla.org/es/docs/Glossary/JavaScript) sigue un paradigma simple basado en objetos, donde un objeto es una colección de propiedades, y cada propiedad se asocia con una clave y un valor. Estas propiedades pueden contener funciones, que se denominan métodos cuando están asociadas a objetos.
 - [**Primitivos**](https://developer.mozilla.org/es/docs/Glossary/Primitive): En [JavaScript](https://developer.mozilla.org/es/docs/Glossary/JavaScript), un **primitivo** (valor primitivo, tipo de dato primitivo) son datos que no son un [objeto](https://developer.mozilla.org/es/docs/Glossary/Object) y no tienen [métodos](https://developer.mozilla.org/es/docs/Glossary/Method). Hay 6 tipos de datos primitivos:
     - **Booleano:** Representa valores de verdad, **`true`** o **`false`**.
     - **Null:** Representa la ausencia intencional de cualquier objeto o valor.
@@ -18,7 +18,7 @@ En JavaScript existen dos tipos de datos:
     - **Símbolo:** Introducido en ECMAScript 6, representa un identificador único e inmutable.
 
 ## Comentarios de JavaScript
-``
+```javascript
 // Comentario de una sola línea
 
 /*
@@ -26,14 +26,15 @@ comentarios de varias líneas
 linea uno
 linea dos
 linea tres
- */
-``
-## VARIABLES EN JAVASCRIPT
+*/
+```
 
+## VARIABLES EN JAVASCRIPT
+```js
 let a = 5;
 let b = 6;
 let c = a + b;
-
+```
 <aside>
 🧐 *La `var`palabra clave se utilizó en todo el código JavaScript desde 1995 hasta 2015.*
 
@@ -70,10 +71,12 @@ Los nombres de funciones pueden contener letras, dígitos, subrayados y signos d
 Los paréntesis pueden incluir nombres de parámetros separados por comas:
 ( parámetro1, parámetro2,... )
 El código a ejecutar, por la función, se coloca entre llaves: {}
+
 ## Invocación de función
 El código dentro de la función se ejecutará cuando "algo" invoca 
 
-`/ Definición de la función llamada "saludar"
+```js
+/ Definición de la función llamada "saludar"
 function nombreEdad(nombre, edad) {
   // Bloque de código de la función
   console.log( nombre + "Tiene" +edad+ "años");
@@ -81,13 +84,12 @@ function nombreEdad(nombre, edad) {
 
 // Invocación de la función
 nombreEdad("Juan", 30);
-`
-## Función Retorno
-
-Cuando JavaScript encuentra una declaración **`return`**, la función se detiene de inmediato. Si la función fue llamada desde otra parte del código, JavaScript "retornará" a la ejecución justo después de la declaración que hizo la invocación.
-
 ```
 
+## Función Retorno
+Cuando JavaScript encuentra una declaración **`return`**, la función se detiene de inmediato. Si la función fue llamada desde otra parte del código, JavaScript "retornará" a la ejecución justo después de la declaración que hizo la invocación.
+
+```js 
 function miFuncion(a, b) {
 // Function returns the product of a and b
 
@@ -115,7 +117,7 @@ En JavaScript, los objetos son estructuras de datos fundamentales y versátiles 
 2. **Sintaxis de Notación de Objetos:**
     - Los objetos se definen utilizando la notación de llaves **`{}`**. Dentro de las llaves, se especifican las propiedades y sus valores, separados por comas.
     
-    ```jsx
+    ```js
     let persona = {
       nombre: "Juan",
       edad: 25,
@@ -128,7 +130,7 @@ En JavaScript, los objetos son estructuras de datos fundamentales y versátiles 
 3. **Acceso a Propiedades:**
     - Puedes acceder a las propiedades de un objeto utilizando la notación de punto (**`objeto.propiedad`**) o la notación de corchetes (**`objeto['propiedad']`**).
     
-    ```jsx
+    ```js
     console.log(persona.nombre);      // Imprime "Juan"
     console.log(persona['nombre']);   // Imprime "Juan"
     ```
@@ -136,7 +138,7 @@ En JavaScript, los objetos son estructuras de datos fundamentales y versátiles 
 4. **Métodos Abreviados (ES6):**
     - En ECMAScript 2015 (ES6) y versiones posteriores, puedes utilizar métodos abreviados de notación de objetos para definir métodos más concisamente.
     
-    ```jsx
+    ```js
     let persona = {
       nombre: "Juan",
       edad: 25,
@@ -158,7 +160,7 @@ Los objetos en JavaScript son fundamentales para el desarrollo web y se utilizan
 
 **1. Copia de Propiedades con Object.assign():**
 
-```jsx
+```js
 // Crear una copia del objeto persona
 let copiaPersona = Object.assign({}, persona);
 
@@ -196,17 +198,19 @@ console.log(persona);
 // Resultado: { nombre: "Juan", decirHola: [Function: decirHola] }
 ```
 
-Bucle for
+### Bucle for
+
 Un bucle for es una estructura de control en programación que permite ejecutar un bloque de código repetidamente hasta que se cumple una condición especificada. Este bucle consta de cuatro partes principales:
 Inicialización: Al principio, se establece una condición inicial (como let i = 0;), que actúa como el punto de partida.
 Condición: Luego, hay una condición que se verifica antes de cada repetición (i < 5;). Mientras esta condición sea verdadera, el bucle continuará.
 Iteración: Después de cada repetición, se realiza una acción (por ejemplo, i++ significa aumentar i en 1). Esto es como avanzar al siguiente paso o elemento.
 bloque de código : Dentro de las llaves {...} está el código que se ejecuta repetidamente.
 Aquí está la estructura básica:
-
+```js
 for (let i = 0; i < 5; i++) {
   // Código a repetir
 }
+```
 
 ## Algunas características y conceptos clave sobre los arrays en JavaScript:
 
@@ -443,13 +447,11 @@ Existen diferentes tipos de operadores de JavaScript:
     
 3. **Operadores de String**
     
-    
     | Operador | Descripción | Ejemplo | Resultado |
     | --- | --- | --- | --- |
     | + | Concatenación de cadenas | "Hola" + " Mundo" | "Hola Mundo" |
     | += | Concatenación y asignación | let saludo = "Hola"; saludo += " Mundo"; | "Hola Mundo" |
 4. **Operadores lógicos**
-    
     
     | Operador | Descripción | Ejemplo | Resultado |
     | --- | --- | --- | --- |
