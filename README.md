@@ -36,16 +36,18 @@ let b = 6;
 let c = a + b;
 ```
 <aside>
-🧐 *La `var`palabra clave se utilizó en todo el código JavaScript desde 1995 hasta 2015.*
+
+🧐 *La `var` palabra clave se utilizó en todo el código JavaScript desde 1995 hasta 2015.*
 
 *Las palabras clave `let`y `const`se agregaron a JavaScript en 2015.*
 
-*La `var`palabra clave sólo debe usarse en código escrito para navegadores más antiguos*
+*La `var` palabra clave sólo debe usarse en código escrito para navegadores más antiguos*
 
 </aside>
 
 <aside>
-🙄 **¿Cuándo utilizar** `var` **,** `let` **o** `const` **?**
+
+🙄 **¿Cuándo utilizar **`var`** , ** `let` **o** `const` **?**
 
 1. Declarar siempre variables
 
@@ -105,7 +107,7 @@ En términos más simples, imagina que la función es como un mensajero. Cuando 
 
 Las funciones comúnmente calculan algo llamado un **valor de retorno**. Este valor de retorno es como el mensaje que el mensajero trae de vuelta y se entrega a la "persona que llama" (la parte del código que invocó la función). Es como obtener un resultado después de realizar un cálculo.
 
-#### JS avanzado
+##### JS avanzado
 
 ## Objetos en JavaScript
 
